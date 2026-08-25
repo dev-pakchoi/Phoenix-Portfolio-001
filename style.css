@@ -1,3 +1,10 @@
+:root {
+    --c1: #FFE8B4;
+    --c2: #E68457;
+    --c3: #AA1C41;
+    --c4: #5E244E;
+}
+
 * {
     font-family: 'Merriweather', serif;
     margin: 0;
@@ -7,31 +14,31 @@
 }
 
 body {
-    background-color: #1B262C;
+    background-color: var(--c4);
 }
 
 .portfolio-header {
     display: flex;
-    height: 100px;
-
-    
+    margin: 0;
+    border-radius: 5px;
+    background-color: var(--c3);
 
 }
 
 .link {
     text-decoration: none;
-    color: #BBE1FA;
+    color: var(--c1);
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
-    margin: 0 auto;
+    margin: 0 1%;
 
 }
 
 .project-link {
     text-decoration: none;
-    color: #3282B8;
+    color: var(--c1);
     font-size: 20px;
     font-weight: bold;
     padding: 20px;
@@ -41,12 +48,12 @@ body {
 
 
 .portfolio-header .link:hover {
-    background-color: #3282B8;
+    color: var(--c2);
 
 }
 
 .project-link:hover {
-    background-color: #1B262C;
+    background-color: var(--c2);
 
 }
 
@@ -54,17 +61,21 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    color: #BBE1FA;
+    color: var(--c1);
     font-size: 300%;
     padding-bottom: 2%;
-    margin: 2% 20% 2%;
+    margin: 2% 5%;
     border-radius: 25px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.name {
+    color: var(--c2);
+}
+
 .highlight {
-    color: #BBE1FA;
+    color: var(--c1);
     
   
 }
@@ -83,7 +94,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #0F4C75;
+    background-color: var(--c3);
     padding: 20px;
     border-radius: 25px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -91,14 +102,14 @@ body {
 
 .project-title {
     font-size: 34px;
-    color: #BBE1FA;
+    color: var(--c1);
     font-weight: bold;
     
 }
 
 .project-description {
     font-size: 1.1rem;
-    color: #3282B8;
+    color: var(--c2);
     width: 75%;
 }
 
@@ -106,15 +117,12 @@ a {
     font-weight: bold;
 }
 
-hr {
-    color:#BBE1FA;
-}
 
 .footer {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    color: #BBE1FA;
+    color: var(--c1);
     
 }
 @media (max-width: 768px) {
@@ -125,7 +133,7 @@ hr {
     .portfolio-intro {
         height: auto;
         font-size: 200%;
-        margin: 2%;
+        margin: 5%;
     }
 
     .project-card {

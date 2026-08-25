@@ -7,43 +7,46 @@
 }
 
 body {
-    background-color: #5E244E;
+    background-color: #1B262C;
 }
 
 .portfolio-header {
     display: flex;
-    gap: 20px;
     height: 100px;
 
+    
 
 }
 
-.link, .project-link {
+.link {
     text-decoration: none;
-    color: #39132e;
+    color: #BBE1FA;
     font-size: 20px;
     padding: 20px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+
 }
 
 .project-link {
     text-decoration: none;
-    color: #FFE8B4;
+    color: #3282B8;
     font-size: 20px;
+    font-weight: bold;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: all 0.3s ease-in-out;
 }
 
 
 .portfolio-header .link:hover {
-    background-color: #AA1C41;
+    background-color: #3282B8;
 
 }
 
 .project-link:hover {
-    background-color: #5E244E;
+    background-color: #1B262C;
 
 }
 
@@ -51,19 +54,19 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: #5E244E;
-    color: #FFE8B4;
+    color: #BBE1FA;
     font-size: 300%;
-    padding-bottom: 20px;
-    margin-left: 25%;
-    margin-right: 25%;
-    
-    
+    padding-bottom: 2%;
+    margin: 2% 20% 2%;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.about-section {
-    margin-top: 40px;
-    font-size: 50%;
+.highlight {
+    color: #BBE1FA;
+    
+  
 }
 
 .portfolio-content {
@@ -75,28 +78,27 @@ body {
     margin-bottom: 5%;
 }
 
-.highlight {
-    font-weight: bold;
-}
 
 .project-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #AA1C41;
+    background-color: #0F4C75;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-title {
-    font-size: 24px;
-    color: #FFE8B4;
+    font-size: 34px;
+    color: #BBE1FA;
+    font-weight: bold;
+    
 }
 
 .project-description {
-    font-size: 1rem;
-    color: #E68457;
+    font-size: 1.1rem;
+    color: #3282B8;
     width: 75%;
 }
 
@@ -104,11 +106,17 @@ a {
     font-weight: bold;
 }
 
-.BAFTA, .steam {
-    color: #FFE8B4;
+hr {
+    color:#BBE1FA;
 }
 
-
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #BBE1FA;
+    
+}
 @media (max-width: 768px) {
     .portfolio-header {
         height: auto;
@@ -117,6 +125,7 @@ a {
     .portfolio-intro {
         height: auto;
         font-size: 200%;
+        margin: 2%;
     }
 
     .project-card {

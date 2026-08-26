@@ -21,7 +21,8 @@ body {
     display: flex;
     margin: 0;
     border-radius: 5px;
-    background-color: var(--c3);
+    background-color: var(--c4);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
 }
 
